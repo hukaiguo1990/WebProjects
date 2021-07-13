@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表单练习</title>
+  </head>
+  <body>
+    <div>题目:</div>
+    <div><img src="表单.bmp" alt="图片未找到" width="200" height="200" /></div>
+    <div>练习:</div>
+    <hr />
+    <div>
+      <form>
+        <div>
+          <label>姓名:</label
+          ><input type="text" name="userName" placeholder="请输入姓名" />
+        </div>
+        <div>
+          <label>密码:</label
+          ><input type="password" name="pwd" placeholder="请输入密码" />
+        </div>
+        <div>
+          <label>确认密码:</label
+          ><input type="password" name="pwd2" placeholder="请重新输入密码" />
+        </div>
+        <div>
+          <label>密码提示问题:</label>
+          <select name="problem">
+            <option value="0">请选择一个问题</option>
+            <option value="1">你小学学校名称?</option>
+            <option value="2">你的爸爸姓什么?</option>
+          </select>
+        </div>
+        <div>
+          <label>密码提示答案:</label>
+          <input type="text" name="answer" />
+        </div>
+        <div>
+          <label>性别:</label>
+          <input type="radio" name="sex" id="man" value="1" /><label for="man"
+            >男</label
+          >
+          <input type="radio" name="sex" id="woman" value="2" /><label
+            for="woman"
+            >女</label
+          >
+        </div>
+        <div>
+          <label>年龄:</label>
+          <input type="text" name="age" />
+        </div>
+        <div>
+          <label>籍贯:</label>
+          <select name="address1">
+            <option value="0">请选择</option>
+          </select>
+          <span>省/直辖市</span>
+          <select name="address2">
+            <option value="0">请选择</option>
+          </select>
+          <span>市</span>
+        </div>
+        <div>
+          <label>爱好:</label>
+          <input type="checkbox" name="like" id="like1" value="1"/><label for="like1"
+            >篮球</label
+          >
+          <input type="checkbox" name="like" id="like2" value="2"/><label for="like2"
+            >足球</label
+          >
+          <input type="checkbox" name="like" id="like3" value="3"/><label for="like3"
+            >排球</label
+          >
+        </div>
+        <div>
+          <label>个人介绍:</label>
+          <textarea
+            name="introduce"
+            placeholder="请输入"
+            cols="20"
+            rows="10"
+          ></textarea>
+        </div>
+        <div>
+          <label>上传头像:</label>
+          <input type="text" name="filename" />
+          <input type="file" name="file" />
+        </div>
+        <div>
+          <input type="submit" />
+          <input type="reset" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
