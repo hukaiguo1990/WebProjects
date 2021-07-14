@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学习卡片</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f9f9f9;
+      }
+
+      .card {
+        position: relative;
+        width: 570px;
+        height: 210px;
+        margin: 100px auto;
+        padding: 15px 0;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 5px;
+        transition: all 0.4s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .card:hover .mask {
+        opacity: 1;
+      }
+
+      .card .item {
+        color: #333;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 22px 0 22px 25px;
+        font-weight: 600;
+      }
+
+      .card .item span {
+        color: #999;
+        font-weight: 400;
+      }
+
+      .card .mask {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: all ease 1s;
+        background-image: linear-gradient(270deg, #a066fc 0%, #3514ce 100%);
+        opacity: 0;
+      }
+
+      .card .mask img {
+        width: 50px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <p class="item">5、Ai软件基础<span>（Ai基础工具及界面讲解）</span></p>
+      <p class="item">7、画面合成<span>（画面合成/调色等技法）</span></p>
+      <p class="item">
+        6、图标设计<span>（图标规范/扁平化/伪扁平化/超写实图标设计）</span>
+      </p>
+      <p class="item">
+        8、BANNER设计 <span>（认识banner类型及运营思维对设计的影响）</span>
+      </p>
+      <div class="mask">
+        <img src="PS.png" alt="" />
+        <img src="AI.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
