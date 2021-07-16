@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小米手机列表</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    ul > li {
+      list-style: none;
+    }
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .phone-box {
+      width: 1226px;
+      height: 686px;
+      margin: 0 auto;
+      background-color: #fafafa;
+    }
+
+    .box-hd {
+      width: 100%;
+      height: 58px;
+    }
+    .box-hd .title {
+      float: left;
+      color: #333;
+      font-size: 22px;
+      line-height: 58px;
+    }
+    .box-hd .more {
+      float: right;
+      color: #424242;
+      font-size: 16px;
+      line-height: 58px;
+    }
+
+    .box-hd .more:hover {
+      color: orange;
+    }
+
+    .box-bd .left {
+      float: left;
+      width: 234px;
+      height: 614px;
+    }
+
+    .box-bd .left:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      transform: translate3d(0, -2px, 0);
+    }
+
+    .box-bd .left img {
+      width: 234px;
+      height: 614px;
+    }
+    .box-bd .right {
+      float: left;
+      width: 992px;
+      height: 614px;
+    }
+
+    .right .item {
+      float: left;
+      width: 234px;
+      height: 260px;
+      padding: 20px 0;
+      background-color: #fff;
+      align-content: center;
+      text-align: center;
+      margin: 0 0 14px 14px;
+    }
+
+    .right .item:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      transform: translate3d(0, -2px, 0);
+    }
+    .right .item img {
+      width: 160px;
+      height: 160px;
+    }
+    .right .item > h3 {
+      color: #333;
+      font-size: 14px;
+      text-align: center;
+      margin: 0 10px 2px;
+    }
+    .right .item .desc {
+      color: #b0b0b0;
+      font-size: 12px;
+      text-align: center;
+      margin: 0 10px 10px;
+    }
+
+    .price {
+      text-align: center;
+      margin: 0 10px 14px;
+    }
+    .price .num {
+      color: #ff6700;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .price .del-num {
+      color: #b0b0b0;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <div class="phone-box">
+      <div class="box-hd">
+        <span class="title">手机</span>
+        <span class="more">查看更多</span>
+      </div>
+      <div class="box-bd">
+        <div class="left">
+          <img
+            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+            alt=""
+          />
+        </div>
+        <ul class="right">
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 10 Pro</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1699元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb554f30eaa0316b0a736c3d59f21584.png?thumb=1&w=250&h=250&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 9 Pro</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1499元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d47f7ecaa04d92bf2790d4a5d53d9099.png?thumb=1&w=250&h=250&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 8</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1199元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 7 Pro</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1699元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 6 Pro</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1199元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8909080ddb0851af0b87530e2927844f.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 5 Pro</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1199元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 4 Pro</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1299元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+          <li class="item">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/34caee2c867bfd8c5e0dc2d8c663e121.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+              alt=""
+            />
+            <h3>Note 3 Pro</h3>
+            <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+            <p class="price">
+              <span class="num">1399元</span>
+              <span class="del-num">1799元</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

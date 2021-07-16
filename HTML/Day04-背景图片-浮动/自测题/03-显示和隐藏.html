@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .d1 {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+      }
+
+      .d1:hover .inner {
+        /* opacity: 0; */
+        /* display: none; */
+        visibility: hidden;
+      }
+      .d1 .inner {
+        width: 50px;
+        height: 50px;
+        background-color: pink;
+        /* opacity: 1; */
+        /* display: block; */
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 列举三种  实现 显示 和  隐藏的  方法 -->
+    <!-- 1.使用opacity属性 --> 
+    <!-- 2.通过display:none ; 使用dispaly隐藏的元素会在文档中消失--> 
+    <!-- 3.使用visibility属性 -->
+    <div class="d1">
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

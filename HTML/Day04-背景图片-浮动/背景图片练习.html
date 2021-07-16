@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>背景图片练习</title>
+    <style>
+      .bg-image {
+        width: 275px;
+        height: 105px;
+        /* background-image: url("https://bufanweb3.oss-cn-beijing.aliyuncs.com/webdev/20200119150205.jpg"); */
+        /* background: pink url("https://bufanweb3.oss-cn-beijing.aliyuncs.com/webdev/20200119150205.jpg") no-repeat center center; */
+        /* background格式：
+           background：背景色  背景图片 平铺方式(repeat) 位置(position) 是否滚动(attachment)
+           background-color: 背景色
+           background-image: 背景图片, 必须写在url中
+           background-repeat: 平铺方式: repeat(平铺,默认值) no-repeat(不平铺) repeat-x(沿水平方向平铺) repeat-y(沿垂直方向平铺)
+           background-position: 图片位置;可以写方位单词(left, right, top , bottom ,center),也可以写具体像素值
+           background-attachment: 图片是否滚动(scroll: 设置为scroll时,背景图片相对于当前元素固定,随元素移动而移动; fixed: 背景图片相对于视口固定,背景图片不会随着元素移动)
+        */
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-image"></div>
+  </body>
+</html>

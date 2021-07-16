@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>三角形</title>
+    <style>
+      .box {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        margin: 100px auto;
+        background-color: pink;
+      }
+
+      .box:before {
+        /* 1.宽高设置为0 (height: 0; width: 0;)
+             2.content设置为空 "" (content: "";)
+             3.边框border设置宽度,实线,颜色透明 (border: 10px solid transparent;)
+             4.根据需求设置不同方向的边框的颜色 (border-bottom-color: orange;)
+             5.通过定位设置三角的位置 (posistion)
+          */
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        border: 10px solid transparent;
+        border-bottom-color: orange;
+        height: 0;
+        width: 0;
+      }
+      .box1 {
+        width: 0;
+        height: 0;
+        margin: 50px auto;
+        border: 100px solid transparent;
+        border-top-color: red;
+        border-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box1"></div>
+  </body>
+</html>
