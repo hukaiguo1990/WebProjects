@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小米右侧工具栏</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .sidebar {
+      position: fixed;
+      bottom: 110px;
+      right: 0;
+      width: 84px;
+      height: 455px;
+    }
+
+    .sidebar-item {
+      display: block;
+      position: relative;
+      width: 82px;
+      height: 90px;
+      border: 1px solid #f5f5f5;
+      text-align: center;
+    }
+
+    .sidebar-item img {
+      width: 30px;
+      height: 30px;
+      padding-top: 18px;
+    }
+
+    .sidebar-item .text {
+      display: block;
+      color: #757575;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .sidebar-item .pop {
+      position: absolute;
+      left: -150px;
+      top: 0;
+      padding: 14px;
+      text-align: center;
+      border: 1px solid #f5f5f5;
+      display: none;
+    }
+
+    .sidebar-item .pop img {
+      width: 100px;
+      height: 100px;
+      margin: 6px 0 0;
+      vertical-align: middle;
+    }
+
+    .sidebar-item .pop .text {
+      color: #757575;
+      width: 82px;
+      margin: 14px auto 0;
+    }
+
+    .sidebar-item .pop .icon {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: -20px;
+      border: 10px solid transparent;
+      border-left-color: rgb(124, 121, 114);
+      height: 0;
+      width: 0;
+    }
+
+    .sidebar-item.app:hover .pop {
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="sidebar">
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/55cad219421bee03a801775e7309b920.png"
+            alt=""
+          />
+          <span class="text">个人中心</span>
+        </div>
+      </a>
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12eb0965ab33dc8e05870911b90f3f13.png"
+            alt=""
+          />
+          <span class="text">售后服务</span>
+        </div>
+      </a>
+
+      <a class="sidebar-item app" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/98a23aae70f25798192693f21c4d4039.png"
+            alt=""
+          />
+          <span class="text">手机APP</span>
+          <div class="pop">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/78c30d4f259ed43ab20e810a522a6249.png"
+            />
+            <span class="text">扫码领取新人百元礼包</span>
+            <div class="icon"></div>
+          </div>
+        </div>
+      </a>
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/4f036ae4d45002b2a6fb6756cedebf02.png"
+            alt=""
+          />
+          <span class="text">人工服务</span>
+        </div>
+      </a>
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/d7db56d1d850113f016c95e289e36efa.png"
+            alt=""
+          />
+          <span class="text">购物车</span>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

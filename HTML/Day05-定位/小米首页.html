@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小米首页</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      .top-bar {
+        height: 40px;
+        background-color: #333;
+        color: #b0b0b0;
+        font-size: 12px;
+        line-height: 40px;
+      }
+      .top-bar .top-bar-c {
+        width: 1226px;
+        height: 100%;
+        margin: 0 auto;
+      }
+      .top-bar-nav {
+        float: left;
+      }
+      .top-bar .sep {
+        color: #424242;
+        font-size: 12px;
+        margin: 0 3.6px;
+      }
+      .top-bar a:hover {
+        color: #fff;
+      }
+      .user-info {
+        float: right;
+      }
+
+      .user-info .cart {
+        position: relative;
+        width: 105px;
+        height: 100%;
+        display: inline-block;
+        margin-left: 15px;
+        text-align: center;
+      }
+
+      .user-info .cart:hover {
+        color: #ff6700;
+        background-color: #fff;
+      }
+
+      .user-info .cart img {
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+        margin-right: 4px;
+      }
+
+      .user-info .cart .pop {
+        position: absolute;
+        width: 276px;
+        padding: 20px 0 20px;
+        text-align: center;
+        top: 40px;
+        right: 0;
+        border: 1px solid red;
+        /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); */
+        color: #424242 !important;
+        display: none;
+      }
+
+      .user-info .cart:hover .pop {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-c">
+        <div class="top-bar-nav">
+          <a herf="">小米商城 </a>
+          <span class="sep">|</span>
+          <a herf="">MIUI </a>
+          <span class="sep">|</span>
+          <a herf="">loT </a>
+          <span class="sep">|</span>
+          <a herf="">云服务 </a>
+          <span class="sep">|</span>
+          <a herf="">天星科技 </a>
+          <span class="sep">|</span>
+          <a herf="">有品 </a>
+          <span class="sep">|</span>
+          <a herf="">小爱开发平台 </a>
+          <span class="sep">|</span>
+          <a herf="">企业团购 </a>
+          <span class="sep">|</span>
+          <a herf="">资质证照 </a>
+          <span class="sep">|</span>
+          <a herf="">协议规则 </a>
+          <span class="sep">|</span>
+          <a herf="">下载APP </a>
+          <span class="sep">|</span>
+          <a herf="">智能生活 </a>
+          <span class="sep">|</span>
+          <a herf="">Select Location </a>
+        </div>
+        <div class="user-info">
+          <a herf="">登录 </a>
+          <span class="sep">|</span>
+          <a herf="">注册 </a>
+          <span class="sep">|</span>
+          <a herf="">消息通知 </a>
+          <div class="cart">
+            <img src="image/car.png" alt="" />
+            <span>购物车(0)</span>
+            <div class="pop">购物车中还没有商品，赶紧选购吧</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="footer"></div>
+  </body>
+</html>
