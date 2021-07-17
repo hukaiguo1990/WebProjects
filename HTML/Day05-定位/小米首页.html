@@ -52,6 +52,7 @@
         display: inline-block;
         margin-left: 15px;
         text-align: center;
+        background-color: #424242;
       }
 
       .user-info .cart:hover {
@@ -73,20 +74,656 @@
         text-align: center;
         top: 40px;
         right: 0;
-        border: 1px solid red;
-        /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         color: #424242 !important;
+        background-color: #fff;
         display: none;
       }
 
       .user-info .cart:hover .pop {
         display: block;
       }
+      /* 顶部导航 */
+      .header .header-c {
+        height: 100px;
+        width: 1226px;
+        margin: 0 auto;
+        /* background-color: green; */
+      }
+      .header .header-c .header-logo {
+        float: left;
+        width: 62px;
+        padding-top: 22px;
+      }
+      .header .header-c .header-logo a {
+        display: inline-block;
+        width: 56px;
+        height: 56px;
+        background-image: url("https://s02.mifile.cn/assets/static/image/logo-mi2.png");
+        background-repeat: no-repeat;
+        background-size: 56px 56px;
+      }
+
+      .header .header-c .header-links {
+        float: left;
+        height: 100%;
+        width: 850px;
+      }
+      .header .header-c .header-links li {
+        float: left;
+        line-height: 100px;
+        padding: 0 10px;
+      }
+      .header .header-c .header-links li a {
+        display: block;
+        color: #333;
+        font-size: 16px;
+        height: 100%;
+      }
+
+      .header .header-c .header-links li:hover a {
+        color: #ff6700;
+      }
+      .header .header-c .header-links li.category {
+        float: left;
+        width: 127px;
+        height: 100px;
+      }
+
+      .header .header-c .header-search {
+        float: right;
+        height: 48px;
+        width: 296px;
+        margin-top: 25px;
+      }
+
+      .header .header-c .header-search:hover input {
+        border-color: #333;
+      }
+
+      .header .header-c .header-search:hover a {
+        border-color: #333;
+      }
+
+      .header .header-c .header-search a:hover {
+        background-color: #ff6700;
+      }
+
+      .header .header-c .header-search input {
+        border: none;
+        outline: none;
+        height: 100%;
+        width: 223px;
+        border: 1px solid #e0e0e0;
+        padding: 0 10px;
+      }
+      .header .header-c .header-search a {
+        float: right;
+        display: block;
+        width: 50px;
+        height: 48px;
+        border: 1px solid #e0e0e0;
+        border-left: none;
+        background: url(image/search.png) no-repeat center center;
+        background-size: 18px 18px;
+      }
+      /* 侧边工具栏 */
+      .sidebar {
+        position: fixed;
+        bottom: 110px;
+        right: 0;
+        width: 84px;
+        height: 455px;
+        background-color: #fff;
+      }
+
+      .sidebar-item {
+        display: block;
+        position: relative;
+        width: 82px;
+        height: 90px;
+        border: 1px solid #f5f5f5;
+        text-align: center;
+      }
+
+      .sidebar-item img {
+        width: 30px;
+        height: 30px;
+        padding-top: 18px;
+      }
+
+      .sidebar-item .text {
+        display: block;
+        color: #757575;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .sidebar-item .pop {
+        position: absolute;
+        left: -150px;
+        top: 0;
+        padding: 14px;
+        text-align: center;
+        border: 1px solid #f5f5f5;
+        background-color: #fff;
+        display: none;
+      }
+
+      .sidebar-item .pop img {
+        width: 100px;
+        height: 100px;
+        margin: 6px 0 0;
+        vertical-align: middle;
+      }
+
+      .sidebar-item .pop .text {
+        color: #757575;
+        width: 82px;
+        margin: 14px auto 0;
+      }
+
+      .sidebar-item .pop .icon {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: -20px;
+        border: 10px solid transparent;
+        border-left-color: rgb(124, 121, 114);
+        height: 0;
+        width: 0;
+      }
+
+      .sidebar-item.app:hover .pop {
+        display: block;
+      }
+      /* 中心部分 */
+      .container .container-c {
+        height: 100px;
+        width: 1226px;
+        margin: 0 auto;
+        height: 670px;
+        /* background-color: orange; */
+      }
+
+      .container .banner {
+        position: relative;
+        height: 460px;
+        width: 100%;
+      }
+
+      .container .banner .banner-links {
+        position: absolute;
+        width: 234px;
+        height: 420px;
+        left: 0;
+        top: 0;
+        padding: 20px 0;
+        background-color: rgba(105, 101, 101, 0.6);
+      }
+
+      .container .banner img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+
+      .container .banner .banner-links .links-item {
+        position: relative;
+        width: 204px;
+        height: 42px;
+        color: #fff;
+        padding-left: 30px;
+        line-height: 42px;
+      }
+
+      .container .banner .banner-links .links-item:hover {
+        background-color: #ff6700;
+      }
+      .container .banner .banner-links .links-item span {
+        float: right;
+        margin-right: 30px;
+        color: #e0e0e0;
+      }
+
+      .container .banner .banner-prev {
+        position: absolute;
+        top: 50%;
+        left: 235px;
+        margin-top: -35px;
+        width: 41px;
+        height: 69px;
+        background: url(image/arr.png) no-repeat -83px;
+      }
+
+      .container .banner .banner-prev:hover {
+        background-position: 0;
+      }
+
+      .container .banner .banner-next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -35px;
+        width: 41px;
+        height: 69px;
+        background: url(image/arr.png) no-repeat -123px;
+      }
+
+      .container .banner .banner-next:hover {
+        background-position: -41px;
+      }
+
+      .container .banner .pagination {
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        width: 400px;
+        height: 20px;
+        text-align: right;
+        line-height: 20px;
+      }
+
+      .container .banner .pagination a {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.4);
+        margin: 0 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .container .banner .pagination a:hover {
+        background-color: #fff;
+      }
+
+      .container .container-footer {
+        width: 100%;
+        height: 170px;
+        margin-top: 14px;
+      }
+
+      .container .container-footer .footer-item {
+        float: left;
+        width: 316px;
+        height: 170px;
+        background-color: #fff;
+        margin-left: 14px;
+      }
+
+      .container .container-footer .footer-item img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .container .container-footer .footer-item.links {
+        width: 234px;
+        margin-left: 0;
+        background-color: #5f5750;
+      }
+
+      .container .container-footer .footer-item.span16 {
+        margin-left: 15px;
+      }
+
+      .container-footer .footer-item.links .links-item {
+        float: left;
+        width: 70px;
+        height: 64px;
+        padding: 0 3px;
+        text-align: center;
+        padding-top: 18px;
+        border: 1px solid #665e57;
+      }
+
+      .container-footer .footer-item.links .links-item img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .container-footer .footer-item.links .links-item .item-text {
+        color: #e0e0e0;
+        font-size: 12px;
+      }
+      /* 产品展示部分 */
+      .main {
+        background-color: #f5f5f5;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .main .main-c {
+        width: 1226px;
+        margin: 0 auto;
+      }
+
+      .main .main-c .main-top {
+        height: 120px;
+        margin: 20px 0;
+      }
+
+      .main .main-c .main-top img {
+        width: 1226px;
+        height: 100%;
+      }
+
+      .phone-box {
+        width: 1226px;
+        margin: 0 auto;
+        overflow: hidden;
+        /* background-color: #fafafa; */
+      }
+
+      .box-hd {
+        width: 100%;
+        height: 58px;
+      }
+      .box-hd .title {
+        float: left;
+        color: #333;
+        font-size: 22px;
+        line-height: 58px;
+      }
+      .box-hd .more {
+        float: right;
+        color: #424242;
+        font-size: 16px;
+        line-height: 58px;
+      }
+
+      .box-hd .more:hover {
+        color: orange;
+      }
+
+      .box-bd .left {
+        float: left;
+        width: 234px;
+        height: 614px;
+      }
+
+      .box-bd .left:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        transform: translate3d(0, -2px, 0);
+      }
+
+      .box-bd .left img {
+        width: 234px;
+        height: 614px;
+      }
+      .box-bd .right {
+        float: left;
+        width: 992px;
+        height: 614px;
+      }
+
+      .right .item {
+        float: left;
+        width: 234px;
+        height: 260px;
+        padding: 20px 0;
+        background-color: #fff;
+        align-content: center;
+        text-align: center;
+        margin: 0 0 14px 14px;
+      }
+
+      .right .item:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        transform: translate3d(0, -2px, 0);
+      }
+      .right .item img {
+        width: 160px;
+        height: 160px;
+      }
+      .right .item > h3 {
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 10px 2px;
+      }
+      .right .item .desc {
+        color: #b0b0b0;
+        font-size: 12px;
+        text-align: center;
+        margin: 0 10px 10px;
+      }
+
+      .price {
+        text-align: center;
+        margin: 0 10px 14px;
+      }
+      .price .num {
+        color: #ff6700;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .price .del-num {
+        color: #b0b0b0;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: line-through;
+      }
+
+      /* footer底部 */
+      .footer .footer-c {
+        width: 1226px;
+        margin: 0 auto;
+      }
+
+      .footer-c .footer-service {
+        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+        overflow: hidden;
+        padding: 27px 0;
+      }
+
+      .footer .footer-service .service-item {
+        float: left;
+        width: 19.8%;
+        height: 25px;
+        border-right: 1px solid #e0e0e0;
+        text-align: center;
+      }
+
+      .footer .footer-service .service-item.last {
+        border-right: none;
+      }
+
+      .footer .footer-service .service-item img {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 4px;
+        margin-top: -2px;
+      }
+
+      .footer .footer-service .service-item a {
+        color: #616161;
+        font-size: 16px;
+      }
+
+      .footer .footer-links {
+        width: 100%;
+        height: 200px;
+        padding: 40px 0;
+      }
+
+      .footer .footer-links dl {
+        float: left;
+        width: 160px;
+      }
+      .footer .footer-links dt {
+        color: #424242;
+        font-size: 14px;
+        line-height: 1.25;
+        margin: -1px 0 26px;
+      }
+
+      .footer .footer-links dd {
+        color: #757575;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      .footer .footer-links dd:hover {
+        color: #ff6700;
+      }
+
+      .footer .footer-links .contact {
+        float: right;
+        width: 251px;
+        border-left: 1px solid #e0e0e0;
+        text-align: center;
+        color: #616161;
+      }
+
+      .footer .footer-links .contact p {
+        font-size: 12px;
+      }
+      .footer .footer-links .contact .phone {
+        color: #ff6700;
+        font-size: 22px;
+      }
+      .footer .footer-links .contact .contact-btn {
+        display: inline-block;
+        width: 118px;
+        height: 28px;
+        font-size: 12px;
+        color: #ff6700;
+        border: 1px solid #ff6700;
+        line-height: 28px;
+      }
+
+      .footer .footer-links .contact .contact-btn:hover {
+        background-color: #ff6700;
+        color: #fff;
+      }
+
+      .footer .footer-links .contact .contact-btn img {
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+      }
+
+      .follow {
+        font-size: 12px;
+        /* line-height: 24px; */
+        margin-top: 10px;
+      }
+
+      .follow .weibo {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url("https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wb.png");
+        background-size: 24px 24px;
+        vertical-align: middle;
+        margin: 0 6px;
+      }
+
+      .follow .weixin {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url("https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx.png");
+        vertical-align: middle;
+        background-size: 24px 24px;
+      }
+
+      .site-info {
+        background-color: #e0e0e0;
+        overflow: hidden;
+        padding: 30px 0;
+      }
+      .site-info .site-info-c {
+        width: 1226px;
+        margin: 0 auto;
+      }
+
+      .site-info-c .logo {
+        float: left;
+      }
+      .site-info-c .text {
+        float: left;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+
+      .site-info-c .text p {
+        font-size: 12px;
+        color: #b0b0b0;
+      }
+
+      .site-info-c .text a {
+        color: #757575;
+      }
+      .site-info-c .text .sep {
+        color: #b0b0b0;
+      }
+
+      .site-info-c .logo img {
+        width: 56px;
+        height: 56px;
+      }
+
+      .info-links {
+        padding-bottom: 30px;
+      }
+
+      .info-links img {
+        height: 28px;
+      }
+
+      .info-foot {
+        width: 100%;
+        text-align: center;
+      }
+
+      .video-list .video-item {
+        width: 296px;
+        height: 285px;
+        float: left;
+        margin-left: 14px;
+        margin-bottom: 14px;
+        background-color: #fff;
+      }
+
+      .video-list .video-item:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        transform: translate3d(0, -2px, 0);
+      }
+
+      .video-list .video-item.mr0 {
+        margin-left: 0;
+      }
+
+      .video-list .video-item img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 28px;
+      }
+
+      .video-list .video-item .title {
+        font-size: 14px;
+        color: #333;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 14px 6px;
+      }
+
+      .video-list .video-item .desc {
+        font-size: 12px;
+        color: #b0b0b0;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div class="top-bar">
       <div class="top-bar-c">
+        <!-- 顶部导航栏 -->
         <div class="top-bar-nav">
           <a herf="">小米商城 </a>
           <span class="sep">|</span>
@@ -128,8 +765,906 @@
         </div>
       </div>
     </div>
-    <div class="head"></div>
-    <div class="body"></div>
-    <div class="footer"></div>
+    <div class="header">
+      <div class="header-c">
+        <div class="header-logo"><a href=""></a></div>
+        <div class="header-links">
+          <ul>
+            <li class="category"><a href=""></a></li>
+            <li><a href="">小米手机</a></li>
+            <li><a href="">Redmi 红米</a></li>
+            <li><a href="">电视</a></li>
+            <li><a href="">笔记本</a></li>
+            <li><a href="">家电</a></li>
+            <li><a href="">路由器</a></li>
+            <li><a href="">智能硬件</a></li>
+            <li><a href="">服务</a></li>
+            <li><a href="">社区</a></li>
+          </ul>
+        </div>
+        <div class="header-search">
+          <input type="text" placeholder="请输入..." />
+          <a href=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-c">
+        <div class="banner">
+          <img
+            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1c3e97686468231f3f78048d7f2b7fdc.jpg?thumb=1&w=1533&h=575&f=webp&q=90"
+          />
+          <div class="banner-links">
+            <ul>
+              <li class="links-item">手机 电话卡 <span>></span></li>
+              <li class="links-item">电视 盒子<span>></span></li>
+              <li class="links-item">笔记本 显示器<span>></span></li>
+              <li class="links-item">家电 充电板<span>></span></li>
+              <li class="links-item">出行 穿戴<span>></span></li>
+              <li class="links-item">智能 路由器<span>></span></li>
+              <li class="links-item">电源 配件<span>></span></li>
+              <li class="links-item">健康 儿童<span>></span></li>
+              <li class="links-item">耳机 音响<span>></span></li>
+              <li class="links-item">生活 箱包<span>></span></li>
+            </ul>
+          </div>
+          <div class="banner-prev"></div>
+          <div class="banner-next"></div>
+          <div class="pagination">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="container-footer">
+          <ul>
+            <li class="footer-item links">
+              <ul>
+                <li class="links-item">
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png?w=48&h=48"
+                      alt=""
+                    />
+                    <div class="item-text">小米秒杀</div>
+                  </a>
+                </li>
+                <li class="links-item">
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png?w=48&h=48"
+                      alt=""
+                    />
+                    <div class="item-text">企业团购</div>
+                  </a>
+                </li>
+                <li class="links-item">
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png?w=48&h=48"
+                      alt=""
+                    />
+                    <div class="item-text">F码通道</div>
+                  </a>
+                </li>
+                <li class="links-item">
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png?w=48&h=48"
+                      alt=""
+                    />
+                    <div class="item-text">米粉卡</div>
+                  </a>
+                </li>
+                <li class="links-item">
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png?w=48&h=48"
+                      alt=""
+                    />
+                    <div class="item-text">以旧换新</div>
+                  </a>
+                </li>
+                <li class="links-item">
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png?w=48&h=48"
+                      alt=""
+                    />
+                    <div class="item-text">花费充值</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d4298059889417157e8492750328492.jpg?w=632&h=340"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="footer-item span16">
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b30177d629bfbe2fb42251c1b8538f7b.jpg?w=632&h=340"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="footer-item span16">
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f18ac756fa2cedb16ea429b9c0001af.png?w=632&h=340"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-c">
+        <!-- 手机 -->
+        <div class="main-top">
+          <a herf="#">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/431e5fd6bfd1b67d096928248be18303.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="phone-box">
+          <div class="box-hd">
+            <span class="title">手机</span>
+            <span class="more">查看更多</span>
+          </div>
+          <div class="box-bd">
+            <div class="left">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+                alt=""
+              />
+            </div>
+            <ul class="right">
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 10 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb554f30eaa0316b0a736c3d59f21584.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 9 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1499元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d47f7ecaa04d92bf2790d4a5d53d9099.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 8</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 7 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 6 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8909080ddb0851af0b87530e2927844f.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 5 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 4 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1299元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/34caee2c867bfd8c5e0dc2d8c663e121.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 3 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1399元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 家电 -->
+        <div class="main-top">
+          <a herf="#">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/41d16e66381cfeda7b6b39ab67678d5e.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="phone-box">
+          <div class="box-hd">
+            <span class="title">家电</span>
+            <span class="more">查看更多</span>
+          </div>
+          <div class="box-bd">
+            <div class="left">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+                alt=""
+              />
+            </div>
+            <ul class="right">
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 10 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb554f30eaa0316b0a736c3d59f21584.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 9 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1499元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d47f7ecaa04d92bf2790d4a5d53d9099.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 8</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 7 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 6 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8909080ddb0851af0b87530e2927844f.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 5 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 4 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1299元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/34caee2c867bfd8c5e0dc2d8c663e121.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 3 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1399元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 智能 -->
+        <div class="main-top">
+          <a herf="#">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e8fc8ba9718c266882719fb4bbcedd.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="phone-box">
+          <div class="box-hd">
+            <span class="title">智能</span>
+            <span class="more">查看更多</span>
+          </div>
+          <div class="box-bd">
+            <div class="left">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+                alt=""
+              />
+            </div>
+            <ul class="right">
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 10 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb554f30eaa0316b0a736c3d59f21584.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 9 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1499元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d47f7ecaa04d92bf2790d4a5d53d9099.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 8</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 7 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 6 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8909080ddb0851af0b87530e2927844f.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 5 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 4 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1299元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/34caee2c867bfd8c5e0dc2d8c663e121.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 3 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1399元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 配件 -->
+        <div class="main-top">
+          <a herf="#">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/89c2a209b742fce9b10d9d196149d634.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="phone-box">
+          <div class="box-hd">
+            <span class="title">配件</span>
+            <span class="more">查看更多</span>
+          </div>
+          <div class="box-bd">
+            <div class="left">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+                alt=""
+              />
+            </div>
+            <ul class="right">
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 10 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cb554f30eaa0316b0a736c3d59f21584.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 9 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1499元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d47f7ecaa04d92bf2790d4a5d53d9099.png?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 8</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 7 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1699元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 6 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8909080ddb0851af0b87530e2927844f.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 5 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1199元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=200&h=200&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 4 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1299元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+              <li class="item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/34caee2c867bfd8c5e0dc2d8c663e121.jpg?thumb=1&w=250&h=250&f=webp&q=90"
+                  alt=""
+                />
+                <h3>Note 3 Pro</h3>
+                <p class="desc">天玑1100年度旗舰芯，VC液冷散热</p>
+                <p class="price">
+                  <span class="num">1399元</span>
+                  <span class="del-num">1799元</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 视频 -->
+        <div class="main-top">
+          <a herf="#">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="phone-box">
+          <div class="box-hd">
+            <span class="title">视频</span>
+            <span class="more">查看更多</span>
+          </div>
+          <div class="box-bd">
+            <ul class="video-list">
+              <li class="video-item mr0">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e74c4ff741bcdfc5b28a48a43e4edc6d.jpg?thumb=1&w=370&h=225&f=webp&q=90"
+                  alt=""
+                />
+                <h3 class="title">2021年春季新品发布会第一场</h3>
+                <p class="desc"></p>
+              </li>
+              <li class="video-item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=370&h=225&f=webp&q=90"
+                  alt=""
+                />
+                <h3 class="title">Redmi 10X系列发布会</h3>
+                <p class="desc">Redmi 10X系列发布会</p>
+              </li>
+              <li class="video-item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96563e75833ba4563bd469dd28203b09.jpg?thumb=1&w=370&h=225&f=webp&q=90"
+                  alt=""
+                />
+                <h3 class="title">小米10 青春版 发布会</h3>
+                <p class="desc"></p>
+              </li>
+              <li class="video-item">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fd26bb99b723337a2f8eaba84f7d5bb.jpg?thumb=1&w=370&h=225&f=webp&q=90"
+                  alt=""
+                />
+                <h3 class="title">小米10 8K手机拍大片</h3>
+                <p class="desc"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-c">
+        <div class="footer-service">
+          <ul>
+            <li class="service-item">
+              <img src="image/扳手.png" alt="" /><a href="#">预约维修服务</a>
+            </li>
+            <li class="service-item">
+              <img src="image/7.png" alt="" /><a href="#">7天无理由退货</a>
+            </li>
+            <li class="service-item">
+              <img src="image/15.png" alt="" /><a href="#">15天免费换货</a>
+            </li>
+            <li class="service-item">
+              <img src="image/礼物.png" alt="" /><a href="#">满69包邮</a>
+            </li>
+            <li class="service-item last">
+              <img src="image/位置.png" alt="" /><a href="#">520余家售后网点</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <dl>
+            <dt>帮助中心</dt>
+            <dd>账户管理</dd>
+            <dd>购物指南</dd>
+            <dd>订单操作</dd>
+          </dl>
+          <dl>
+            <dt>服务支持</dt>
+            <dd>售后政策</dd>
+            <dd>自助服务</dd>
+            <dd>相关下载</dd>
+          </dl>
+          <dl>
+            <dt>线下门店</dt>
+            <dd>小米之家</dd>
+            <dd>服务网点</dd>
+            <dd>授权体验店</dd>
+          </dl>
+          <dl>
+            <dt>关于小米</dt>
+            <dd>了解小米</dd>
+            <dd>加入小米</dd>
+            <dd>投资者关系</dd>
+            <dd>企业社会责任</dd>
+            <dd>廉洁举报</dd>
+          </dl>
+          <dl>
+            <dt>帮助中心</dt>
+            <dd>账户管理</dd>
+            <dd>购物指南</dd>
+            <dd>订单操作</dd>
+          </dl>
+          <dl>
+            <dt>关注我们</dt>
+            <dd>官方微信</dd>
+            <dd>联系我们</dd>
+            <dd>新浪微博</dd>
+            <dd>公益基金会</dd>
+          </dl>
+          <div class="contact">
+            <p class="phone">400-100-5678</p>
+            <p style="margin-bottom: 5px">8:00-18:00(仅收市话费)</p>
+            <a class="contact-btn">
+              <img src="image/消 息.png" alt="" /> 人工客服
+            </a>
+            <div class="follow">
+              关注小米:
+              <a href="" class="weibo"></a>
+              <a href="" class="weixin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部补充信息 -->
+    <div class="site-info">
+      <div class="site-info-c">
+        <div class="logo">
+          <img
+            src="https://s02.mifile.cn/assets/static/image/logo-mi2.png"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <div class="sites">
+            <a href="#">小米商城</a>
+            <span class="sep">|</span>
+            <a href="#">MIUI</a>
+            <span class="sep">|</span>
+            <a href="#">米家</a>
+            <span class="sep">|</span>
+            <a href="#">米聊</a>
+            <span class="sep">|</span>
+            <a href="#">多看</a>
+            <span class="sep">|</span>
+            <a href="#">游戏</a>
+            <span class="sep">|</span>
+            <a href="#">政企服务</a>
+            <span class="sep">|</span>
+            <a href="#">小米天猫店</a>
+            <span class="sep">|</span>
+            <a href="#">小米集团隐私政策</a>
+            <span class="sep">|</span>
+            <a href="#">小米公司儿童信息保护规则</a>
+            <span class="sep">|</span>
+            <a href="#">小米商城隐私政策 </a>
+            <span class="sep">|</span>
+            <!--  小米商城隐私政策 | 小米商城用户协议 | 问题反馈 | Select Location -->
+            <a href="#">小米商城用户协议 </a>
+            <span class="sep">|</span>
+            <a href="#">问题反馈 </a>
+            <span class="sep">|</span>
+            <a href="#">Select Location </a>
+          </div>
+          <!-- 北京互联网法院法律服务工作站 | 中国消费者协会 | 北京市消费者协会 -->
+          <div class="sites">
+            <a href="#">北京互联网法院法律服务工作站</a>
+            <span class="sep">|</span>
+            <a href="#">中国消费者协会</a>
+            <span class="sep">|</span>
+            <a href="#">北京市消费者协会</a>
+          </div>
+          <p>
+            © mi.com 京ICP证110507号 京ICP备10046444号
+            京公网安备11010802020134号 京网文[2020]0276-042号
+          </p>
+          <p>
+            （京）网械平台备字（2018）第00005号 互联网药品信息服务资格证
+            (京)-非经营性-2014-0090 营业执照 医疗器械质量公告
+          </p>
+          <p>
+            增值电信业务许可证 网络食品经营备案 京食药网食备202010048
+            食品经营许可证
+          </p>
+          <p>
+            违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉
+            本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+          </p>
+          <div class="info-links">
+            <img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt="" />
+            <img src="https://s01.mifile.cn/i/v-logo-2.png" alt="" />
+            <img src="https://xyt.xinchacha.com/img/icon/icon3.png" alt="" />
+            <img
+              src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png"
+              alt=""
+            />
+            <img
+              src="https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/9053cfe2f64083804e6e7d84faf8c96b.png"
+              alt=""
+            />
+          </div>
+          <div class="info-foot">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 侧边工具栏 -->
+    <div class="sidebar">
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/55cad219421bee03a801775e7309b920.png"
+            alt=""
+          />
+          <span class="text">个人中心</span>
+        </div>
+      </a>
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/12eb0965ab33dc8e05870911b90f3f13.png"
+            alt=""
+          />
+          <span class="text">售后服务</span>
+        </div>
+      </a>
+
+      <a class="sidebar-item app" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/98a23aae70f25798192693f21c4d4039.png"
+            alt=""
+          />
+          <span class="text">手机APP</span>
+          <div class="pop">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/78c30d4f259ed43ab20e810a522a6249.png"
+            />
+            <span class="text">扫码领取新人百元礼包</span>
+            <div class="icon"></div>
+          </div>
+        </div>
+      </a>
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/4f036ae4d45002b2a6fb6756cedebf02.png"
+            alt=""
+          />
+          <span class="text">人工服务</span>
+        </div>
+      </a>
+      <a class="sidebar-item" href="#">
+        <div>
+          <img
+            src="https://i8.mifile.cn/b2c-mimall-media/d7db56d1d850113f016c95e289e36efa.png"
+            alt=""
+          />
+          <span class="text">购物车</span>
+        </div>
+      </a>
+    </div>
   </body>
 </html>
