@@ -1,0 +1,640 @@
+/* 版心 */
+.center {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+  height: 60px;
+  background-color: #fff;
+}
+
+.header .header-c {
+  width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header .header-c .logo {
+  display: block;
+  float: left;
+  width: 121px;
+  height: 100%;
+  background: url(../image/LOGO.png) no-repeat center;
+  background-size: 100%;
+}
+
+.header .header-c .header-nav {
+  float: right;
+}
+
+.header .header-c .header-nav .nav-item {
+  float: left;
+  line-height: 60px;
+  margin-right: 37px;
+  font-size: 14px;
+}
+
+.header .header-c .header-nav .nav-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666;
+}
+
+.header .header-c .header-nav .nav-item a::after {
+  display: block;
+  content: "";
+  background-color: #865eff;
+  width: 100%;
+  height: 2px;
+  margin-top: -10px;
+  opacity: 0;
+}
+
+.header .header-c .header-nav .nav-item.mr0 {
+  margin-right: 0px;
+}
+
+.header .header-c .header-nav .nav-item:hover a {
+  color: #000;
+}
+
+.header .header-c .header-nav .nav-item:hover a::after {
+  opacity: 1;
+}
+
+/* 轮播图 */
+.banner {
+  width: 1160px;
+  height: 360px;
+  background-color: pink;
+  margin: 40px auto 0;
+  position: relative;
+}
+
+.banner .swiper {
+  height: 100%;
+}
+
+.banner .swiper a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../image/banner1.png) no-repeat center;
+  background-size: 100%;
+}
+
+.banner .prev {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3)
+    url(http://www.bufanui.com/pages/front/img/arr.png) no-repeat center;
+  background-size: 11px 20px;
+  transform: rotate(180deg);
+  margin-top: -25.5px;
+  top: 50%;
+  left: 25px;
+  opacity: 0;
+}
+
+.banner .next {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3)
+    url(http://www.bufanui.com/pages/front/img/arr.png) no-repeat center;
+  background-size: 11px 20px;
+  margin-top: -25.5px;
+  top: 50%;
+  right: 25px;
+  opacity: 0;
+}
+
+.banner:hover .next {
+  opacity: 1;
+}
+
+.banner:hover .prev {
+  opacity: 1;
+}
+
+/* 主题 */
+.main {
+  overflow: hidden;
+}
+.main .super {
+  margin-top: 62px;
+}
+
+.main .super .title {
+  font-size: 22px;
+  color: #000;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.main .super .list {
+  margin-top: 20px;
+}
+
+.main .super .list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main .super .list .item {
+  float: left;
+  position: relative;
+  width: 275px;
+  height: 105px;
+  margin-right: 20px;
+  transition: all ease 0.4s;
+}
+
+.main .super .list .item .item-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.main .super .list .item .icon-bg {
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  width: 87px;
+  height: 87px;
+  transition: all ease 0.4s;
+}
+
+.main .super .list .item .icon {
+  position: absolute;
+  top: 27px;
+  left: 32px;
+  width: 55px;
+  height: 55px;
+}
+
+.main .super .list .item.mr0 {
+  margin-right: 0;
+}
+
+.main .super .list .item:hover {
+  transform: translate3d(0, -6px, 0) !important;
+  z-index: 100;
+}
+
+.main .super .list .item:hover .icon-bg {
+  transform: rotate(60deg);
+}
+
+.main .super .list .item .info {
+  position: absolute;
+  top: 19.5px;
+  right: 36.5px;
+}
+
+.main .super .list .item .info .title {
+  font-size: 19px;
+  color: #fff;
+  margin-bottom: 3.5px;
+}
+.main .super .list .item .info .desc {
+  font-size: 12px;
+  width: 123px;
+  color: #fff;
+}
+
+/* 课程 */
+.main .course {
+  overflow: hidden;
+  margin-top: 76px;
+}
+
+.main .course .title {
+  font-size: 22px;
+  color: #000;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 19.5px;
+}
+
+.main .course .cource-list {
+  overflow: hidden;
+}
+
+.main .course .cource-list .item {
+  display: block;
+  width: 570px;
+  height: 201px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.main .course .cource-list .cource-tab {
+  color: #fff;
+  position: absolute;
+  top: 28px;
+  left: 50px;
+}
+
+.cource-list .item .cource-tab .en {
+  font-size: 77px;
+}
+.cource-list .item .cource-tab .cn {
+  display: inline-block;
+  font-size: 16px;
+  width: 64px;
+}
+
+.cource-list .item .cource-tab .btn {
+  display: block;
+  width: 154px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 15px;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.cource-list .item .cource-tab .btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.main .course .cource-list .ui {
+  float: left;
+  background: #6cb550 url(../image/UI女.gif) no-repeat right;
+  background-size: auto 90%;
+}
+
+.main .course .cource-list .web {
+  float: right;
+  background: #576cd3 url(../image/前端男_2.gif) no-repeat right;
+  background-size: auto 90%;
+}
+
+.main .enviroment {
+  margin-top: 98px;
+  background: #e2e2e2;
+  width: 100%;
+  height: 506px;
+  padding-top: 94px;
+  overflow: hidden;
+}
+
+.main .enviroment .imgs {
+  width: 562px;
+  height: 100%;
+  float: left;
+}
+
+.main .enviroment .imgs::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main .enviroment .imgs img {
+  float: left;
+  width: 275px;
+  height: 196px;
+}
+
+.main .enviroment .imgs .top {
+  width: 100%;
+  height: 195px;
+}
+
+.main .enviroment .imgs .top .left {
+  float: left;
+}
+.main .enviroment .imgs .top .right {
+  float: right;
+}
+
+.main .enviroment .imgs .top {
+  margin-bottom: 20px;
+}
+
+.main .enviroment .imgs .bottom .left {
+  float: left;
+}
+.main .enviroment .imgs .bottom .right {
+  float: right;
+}
+
+.main .enviroment .imgs img.mr0 {
+  margin-right: 0;
+}
+
+.main .enviroment .e-banner {
+  float: right;
+  width: 570px;
+  height: 410px;
+  background-color: blue;
+  position: relative;
+}
+
+.main .e-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.e-banner .e-prev {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5)
+    url(http://www.bufanui.com/pages/front/img/arr.png) no-repeat center;
+  background-size: 11px 20px;
+  transform: rotate(180deg);
+  margin-top: -25.5px;
+  top: 50%;
+  left: 17px;
+}
+
+.e-banner .e-next {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5)
+    url(http://www.bufanui.com/pages/front/img/arr.png) no-repeat center;
+  background-size: 11px 20px;
+  margin-top: -25.5px;
+  top: 50%;
+  right: 17px;
+}
+
+.e-banner .pagination {
+  height: fit-content;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.e-banner .pagination span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+
+.main .work {
+  height: 375px;
+  margin-top: 100px;
+}
+
+.main .work .title {
+  font-size: 22px;
+  color: #000;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 19.5px;
+}
+
+.main .work .work-item {
+  float: left;
+  width: 373px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  margin-right: 20px;
+}
+
+.main .work .work-item.mr0 {
+  margin-right: 0;
+}
+
+.main .work .work-item:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}
+
+.main .work .work-item img {
+  width: 100%;
+  height: 145px;
+  border-radius: 5px 5px 0 0;
+}
+
+.work-item .student {
+  margin-left: 32px;
+  margin-top: 17px;
+}
+.work-item .compant {
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+.work-item .desc {
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-top: 6.5px;
+}
+
+.work .public {
+  margin-top: 62px;
+}
+
+.main .public .title {
+  font-size: 22px;
+  color: #000;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.main .public .list {
+  margin-top: 20px;
+}
+
+.main .public .list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main .public .list .item {
+  float: left;
+  width: 275px;
+  height: 154px;
+  margin-right: 20px;
+  transition: all ease 0.4s;
+  position: relative;
+}
+
+.main .public .list .item.mr0 {
+  margin-right: 0;
+}
+
+.main .public .list .item .icon-bg {
+  display: block;
+  width: 100%;
+  height: 105px;
+  transition: all ease 0.4s;
+}
+
+.main .public .list .item .icon {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 48px;
+  top: 26px;
+  left: 110px;
+  transition: all ease 0.4s;
+}
+
+.main .public .list .item .icon-bg:hover {
+  transform: translate3d(0, -6px, 0);
+  box-shadow: 0px 18px 16px -10px rgba(0, 0, 0, 0.2);
+}
+
+.main .public .list .item .icon-bg:hover + .icon {
+  transform: translate3d(0, -6px, 0) rotate(30deg);
+}
+
+.main .public .list .item .info .title {
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+}
+
+.main .public .list .item .info .desc {
+  color: #999;
+  font-size: 12px;
+  line-height: 17px;
+  margin-top: 3px;
+}
+
+.main .talk {
+  margin-top: 72px;
+}
+
+.main .talk .title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #000;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.talk-list {
+  width: 1160px;
+  height: 154px;
+}
+
+.talk-item {
+  float: left;
+  width: 275px;
+  height: 154px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.talk-item img {
+  width: 275px;
+  height: 105px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  vertical-align: middle;
+}
+
+.talk-item img:hover {
+  transform: translateY(-6px);
+}
+
+.talk-item h3 {
+  color: #333;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 20px;
+}
+.talk-item.mr0 {
+  margin: 0;
+}
+
+.time {
+  margin-top: 4px;
+  line-height: 17px;
+}
+
+.time img {
+  height: 17px;
+  width: 17px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.time > span {
+  color: #999;
+  font-size: 12px;
+}
+
+.footer {
+  height: 244px;
+  margin-top: 82px;
+  background: #282c35;
+  padding-top: 86px;
+}
+
+.footer .f-title {
+  font-size: 14px;
+  color: #999;
+}
+.footer .f-text {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer .footer-item {
+  height: 100%;
+  line-height: 33px;
+  float: left;
+  width: 284px;
+}
+
+.footer .footer-item.last{
+  width: 150px;
+}
+
+.footer .footer-item .zx-btn {
+  background-image: linear-gradient(-40deg, #a066fc 0%, #5939ec 100%);
+  width: 156px;
+  height: 45px;
+  border-radius: 22.5px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.footer .footer-item .zx-wx {
+  text-align: center;
+}
+
+.footer .footer-item .zx-wx  img{
+  width: 150px;
+  height: 150px;
+}
+
+/* 咨询 */
+.footer .zx {
+  position: fixed;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 250px;
+  right: 66px;
+  background: #5939ec url(../image/zx.png) no-repeat center;
+  background-size: 18px 18px;
+}

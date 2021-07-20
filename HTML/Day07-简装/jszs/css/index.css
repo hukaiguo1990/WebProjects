@@ -1,0 +1,200 @@
+.banner {
+  width: 100%;
+  height: 714px;
+  position: relative;
+}
+
+.banner .swiper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .dots {
+  overflow: hidden;
+  position: absolute;
+  bottom: 33px;
+  right: 50%;
+  margin-right: -50px;
+}
+
+.banner .dots span {
+  display: block;
+  float: left;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #fff;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.banner .dots span:hover {
+  background-color: #668aca;
+  border-color: #fff;
+}
+
+.title .ctitle {
+  font-size: 30px;
+}
+.title .etitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.title .title-line .left {
+  float: left;
+  width: 60px;
+  height: 1px;
+  background-color: #a1a1a1;
+}
+
+.title .title-line {
+  width: 100%;
+  height: 1px;
+}
+
+.title .title-line .right {
+  float: right;
+  width: 300px;
+  height: 1px;
+  background-color: #a1a1a1;
+}
+
+/* 项目展示导航 */
+.project .pro-nav {
+  height: 16px;
+  width: fit-content;
+  margin: 61px auto 48px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.project .pro-nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.project .pro-nav .nav-item {
+  float: left;
+  text-align: center;
+  font-size: 14px;
+}
+
+.project .pro-nav .nav-item a {
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+}
+
+.project .pro-nav .nav-item .line {
+  display: block;
+  width: 12px;
+  height: 1px;
+  background-color: #668aca;
+  margin: 4px auto 0;
+  opacity: 0;
+}
+.project .pro-nav .line-v {
+  float: left;
+  width: 1px;
+  height: 8px;
+  margin: 4px 28px 0;
+  background-color: #b5b5b5;
+}
+
+.project .pro-nav .nav-item:hover a {
+  width: 42px;
+  font-size: 16px;
+  color: #668aca;
+}
+.project .pro-nav .nav-item:hover .line {
+  opacity: 1;
+}
+
+/* 项目展示列表 */
+.project .pro-list .pro-item {
+  float: left;
+  width: 360px;
+  height: 270px;
+  position: relative;
+  margin-right: 60px;
+}
+.project .pro-list .pro-item.mr0 {
+    margin-right: 0;
+}
+.project .pro-list .item-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.pro-list .pro-item .info {
+  position: absolute;
+  width: 260px;
+  height: 90px;
+  padding: 28px 50px 0;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+.pro-list .pro-item .info .info-title {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.pro-list .pro-item .info .info-desc {
+  font-size: 12px;
+}
+
+.pro-list .pro-item .info .btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  /* background-color: red; */
+  background: url(../image/item-btn.png) no-repeat center;
+  background-size: 30px 30px;
+}
+
+.pro-list .pro-item .item-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  border-radius: 8px;
+}
+
+.pro-list .pro-item .item-mask .mask-info {
+  margin: 58px 50px;
+}
+
+.pro-list .pro-item:hover .info {
+  display: none;
+}
+
+.pro-list .pro-item:hover .item-mask {
+  display: block;
+}
+
+.pro-item .item-mask .mask-info .info-title {
+  font-size: 14px;
+  color: #fff;
+}
+
+.pro-item .item-mask .mask-info .info-desc {
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 19px;
+}
+.pro-item .item-mask .mask-info .text {
+  font-size: 12px;
+  color: #fff;
+}
