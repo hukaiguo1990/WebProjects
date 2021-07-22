@@ -1,0 +1,60 @@
+.content {
+  width: 1200px;
+  margin: 0 auto 200px;
+}
+
+.title {
+  margin: 20px 0 50px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.title .crumb span {
+  color: #668aca;
+}
+
+.content .service-list {
+  width: 368px;
+  float: left;
+}
+
+.content .imgs {
+  width: 750px;
+}
+
+.service-list .item-cname {
+  color: #6b6b6b;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.service-list .item-ename {
+  color: #989898;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.service-list .item-desc {
+  color: #989898;
+  font-size: 14px;
+  /* text-indent: 2em; */
+}
+
+.service-list .line {
+  width: 328px;
+  height: 1px;
+  background-color: #f0f0f0;
+  margin: 20px 0;
+}
+.content .imgs {
+  float: right;
+}
+
+.content .imgs img {
+  display: block;
+  width: 750px;
+  height: 400px;
+}
+.content .imgs .img1 {
+    margin-bottom: 30px;
+}

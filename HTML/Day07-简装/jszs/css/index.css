@@ -63,6 +63,9 @@
 }
 
 /* 项目展示导航 */
+.project {
+  margin-top: 134px;
+}
 .project .pro-nav {
   height: 16px;
   width: fit-content;
@@ -110,6 +113,7 @@
   font-size: 16px;
   color: #668aca;
 }
+
 .project .pro-nav .nav-item:hover .line {
   opacity: 1;
 }
@@ -125,19 +129,37 @@
 .project .pro-list .pro-item.mr0 {
   margin-right: 0;
 }
+
 .project .pro-list .item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+}
+
+.project .pro-list .item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  opacity: 1;
+  transition: all 2s ease;
 }
 
 .pro-list .pro-item .info {
   position: absolute;
   width: 260px;
-  height: 90px;
+  height: 62px;
   padding: 28px 50px 0;
   background-color: #fff;
   bottom: 0;
   left: 0;
+  opacity: 1;
+  transition: all 2s ease;
 }
 
 .pro-list .pro-item .info .info-title {
@@ -165,22 +187,31 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
   border-radius: 8px;
+  opacity: 0;
+  transition: all 1.5s ease;
 }
 
 .pro-list .pro-item .item-mask .mask-info {
   margin: 58px 50px;
 }
 
+.pro-list .pro-item:hover .item-bg {
+  opacity: 1;
+}
+.pro-list .pro-item:hover .item-icon {
+  opacity: 0;
+}
+
 .pro-list .pro-item:hover .info {
-  display: none;
+  opacity: 0;
 }
 
 .pro-list .pro-item:hover .item-mask {
-  display: block;
+  height: 100%;
+  opacity: 1;
 }
 
 .pro-item .item-mask .mask-info .info-title {
@@ -204,4 +235,361 @@
   position: absolute;
   bottom: 60px;
   right: 50px;
+}
+
+/* 产品中心 */
+.goods {
+  margin-top: 120px;
+}
+
+.goods .goods-c {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.goods .goods-nav {
+  height: 114px;
+  text-align: center;
+  margin: 54px auto 110px;
+}
+
+.goods .goods-nav ul {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.goods .goods-nav .nav-item {
+  float: left;
+  width: 164px;
+  height: 100%;
+  margin-right: 79px;
+}
+
+.goods .goods-nav .nav-item.mr0 {
+  margin-right: 0;
+}
+
+.goods .goods-nav .nav-item .name {
+  width: 100%;
+  height: fit-content;
+}
+
+.goods .goods-nav .nav-item .icon {
+  width: 100%;
+  height: 86px;
+  margin-bottom: 9px;
+}
+
+.goods .goods-nav .nav-item .item-icon1 {
+  background: url(../image/product-nav-1.png) no-repeat center;
+  background-size: 126px 90px;
+}
+.goods .goods-nav .nav-item .item-icon2 {
+  background: url(../image/product-nav-2.png) no-repeat center;
+}
+.goods .goods-nav .nav-item .item-icon3 {
+  background: url(../image/product-nav-3.png) no-repeat center;
+}
+.goods .goods-nav .nav-item .item-icon3 {
+  background: url(../image/product-nav-3.png) no-repeat center;
+}
+.goods .goods-nav .nav-item .item-icon4 {
+  background: url(../image/product-nav-4.png) no-repeat center;
+}
+.goods .goods-nav .nav-item .item-icon5 {
+  background: url(../image/product-nav-5.png) no-repeat center;
+}
+
+.goods .goods-nav .nav-item .cname {
+  font-size: 14px;
+}
+
+.goods .goods-nav .nav-item .ename {
+  font-size: 12px;
+}
+
+.goods .goods-nav .nav-item .line {
+  display: block;
+  height: 1px;
+  width: 30px;
+  margin: 7px auto 0;
+  background-color: #668aca;
+  opacity: 0;
+}
+
+.goods .goods-nav .nav-item:hover .icon {
+  background-color: #668aca;
+}
+
+.goods .goods-nav .nav-item:hover .cname {
+  font-size: 16px;
+  color: #668aca;
+}
+
+.goods .goods-nav .nav-item:hover .ename {
+  font-size: 14px;
+  color: #668aca;
+}
+
+.goods .goods-nav .nav-item:hover .line {
+  opacity: 1;
+}
+
+.goods .goods-list .goods-item img {
+  width: 360px;
+  height: 320px;
+}
+
+.goods .goods-list .goods-item .info {
+  width: 268px;
+  padding-left: 92px;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 1;
+}
+
+.goods .goods-list .goods-item {
+  float: left;
+  margin-right: 60px;
+  margin-bottom: 37px;
+  position: relative;
+}
+.goods .goods-list .goods-item.mr0 {
+  margin-right: 0;
+}
+
+.goods .goods-list .goods-item .goods-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.goods-list .goods-item .goods-mask .indx {
+  margin-top: 131px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.goods-list .goods-item .goods-mask .indx .line {
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+}
+.goods-list .goods-item .goods-mask .text {
+  margin-left: 69px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #f8f8f8;
+}
+
+.goods .goods-list .goods-item:hover .info {
+  opacity: 0;
+}
+
+.goods .goods-list .goods-item:hover .goods-mask {
+  opacity: 1;
+}
+
+/* 服务 */
+.service-title {
+  width: 1200px;
+  height: 100%;
+  margin: 120px auto 60px;
+}
+.service {
+  width: 100%;
+  height: 700px;
+  background: url(../image/bg-service.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+.service .service-c {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.service-c .service-nav {
+  position: absolute;
+  right: 0;
+  bottom: 149px;
+}
+
+.service-c .service-nav .service-item {
+  float: left;
+  width: 249px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+.service-c .service-nav .service-item .item-cname {
+  margin-top: 50px;
+  font-size: 16px;
+}
+.service-c .service-nav .service-item .line {
+  width: 30px;
+  height: 1px;
+  margin: 13px auto;
+  background-color: #fff;
+}
+
+.service-c .service-nav .service-item .item-ename {
+  font-size: 12px;
+}
+
+.service-c .service-nav .service-item:hover {
+  background-color: #668aca;
+}
+
+/* 关于 */
+.about {
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.about .about-c {
+  width: 1200px;
+  height: 100%;
+  margin: 140px auto 0;
+}
+.about .about-c .title {
+  margin-bottom: 60px;
+}
+
+.about .about-content {
+  overflow: hidden;
+}
+
+.about .about-content img {
+  float: left;
+  width: 500px;
+  height: 300px;
+}
+
+.about .about-content .text {
+  font-size: 14px;
+  float: right;
+  width: 674px;
+}
+
+.about .about-content .text p {
+  margin-bottom: 34px;
+  text-indent: 2em;
+}
+
+/* 新闻 */
+.news .news-c {
+  width: 1200px;
+  height: 100%;
+  margin: 140px auto;
+}
+
+.news-c .title {
+  margin-bottom: 60px;
+}
+.news-c .news-content {
+  position: relative;
+  width: 100%;
+  height: 570px;
+}
+
+.news-c .news-content .news1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 570px;
+  height: 270px;
+  background: url(../image/news1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.news-c .news-content .news2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  height: 270px;
+  background: url(../image/news2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.news-c .news-content .news3 {
+  position: absolute;
+  left: 300px;
+  bottom: 0;
+  width: 270px;
+  height: 270px;
+  background: url(../image/news3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.news-c .news-content .news4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 570px;
+  height: 570px;
+  background: url(../image/news4.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.news-c .news-content .news-mask {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.news-c .news-content .news-mask .btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  bottom: 12px;
+  background: url(../image/mask-btn.png) no-repeat center;
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+
+.news-c .news-content .news1:hover .news-mask {
+  display: block;
+}
+
+.news-c .news-content .news2:hover .news-mask {
+  display: block;
+}
+
+.news-c .news-content .news3:hover .news-mask {
+  display: block;
+}
+
+.news-c .news-content .news4:hover .news-mask {
+  display: block;
+}
+
+.news-c .news-content .news-mask .text {
+  margin-top: 11px;
+  margin-left: 50px;
+  color: #fff;
+  width: 325px;
+}
+
+.news-c .news-content .news-mask .text .m-title {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.news-c .news-content .news-mask .text .m-desc {
+  font-size: 12px;
 }

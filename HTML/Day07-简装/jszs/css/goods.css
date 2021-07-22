@@ -1,0 +1,152 @@
+.content {
+  width: 1200px;
+  margin: 0 auto 172px;
+}
+
+.content .banner {
+  width: 1200px;
+  height: 300px;
+}
+
+.banner img {
+  height: 300px;
+  width: 1200px;
+}
+
+.title {
+  margin: 51px 0 65px;
+  height: 20px;
+}
+
+.title .crumb {
+  float: left;
+  font-size: 14px;
+}
+
+.title .crumb span {
+  color: #668aca;
+}
+
+.title .pro-nav {
+  float: right;
+  height: 16px;
+  width: fit-content;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.title .pro-nav .nav-item {
+  float: left;
+  text-align: center;
+  font-size: 14px;
+}
+
+.title .pro-nav .nav-item.active a {
+  width: 42px;
+  font-size: 16px;
+  color: #668aca;
+}
+
+.title .pro-nav .nav-item.active .line {
+  opacity: 1;
+}
+
+.title .pro-nav .nav-item a {
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+}
+
+.title .pro-nav .nav-item .line {
+  display: block;
+  width: 12px;
+  height: 1px;
+  background-color: #668aca;
+  margin: 4px auto 0;
+  opacity: 0;
+}
+.title .pro-nav .line-v {
+  float: left;
+  width: 1px;
+  height: 8px;
+  margin: 4px 28px 0;
+  background-color: #b5b5b5;
+}
+
+.title .pro-nav .nav-item:hover a {
+  width: 42px;
+  font-size: 16px;
+  color: #668aca;
+}
+
+.title .pro-nav .nav-item:hover .line {
+  opacity: 1;
+}
+
+/* 列表 */
+
+.goods-list .goods-item img {
+  width: 360px;
+  height: 320px;
+}
+
+.goods-list .goods-item .info {
+  width: 268px;
+  padding-left: 92px;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 1;
+}
+
+.goods-list .goods-item {
+  float: left;
+  margin-right: 60px;
+  position: relative;
+}
+
+.goods-list .goods-item.mrb {
+    margin-bottom: 37px;
+  }
+
+.goods-list .goods-item.mr0 {
+  margin-right: 0;
+}
+
+
+
+.goods-list .goods-item .goods-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.goods-list .goods-item .goods-mask .indx {
+  margin-top: 131px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.goods-list .goods-item .goods-mask .indx .line {
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  background-color: #fff;
+}
+.goods-list .goods-item .goods-mask .text {
+  margin-left: 69px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #f8f8f8;
+}
+
+.goods-list .goods-item:hover .info {
+  opacity: 0;
+}
+
+.goods-list .goods-item:hover .goods-mask {
+  opacity: 1;
+}
