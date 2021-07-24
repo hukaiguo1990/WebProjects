@@ -34,6 +34,11 @@
   color: #6b6b6b;
   font-size: 18px;
   margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.news-list .item-title .name:hover {
+  color: #668aca;
 }
 .news-list .item-title .time {
   float: right;

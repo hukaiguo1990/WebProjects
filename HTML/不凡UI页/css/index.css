@@ -1,0 +1,209 @@
+/* 头部 */
+.header {
+  height: 60px;
+  background-color: #fff;
+}
+
+.header .header-c {
+  width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header-c .logo {
+  display: block;
+  float: left;
+  width: 121px;
+  height: 100%;
+  background: url(../image/LOGO.png) no-repeat center;
+  background-size: 100%;
+}
+
+.header-c .header-nav {
+  float: right;
+}
+
+.header-c .header-nav .nav-item {
+  float: left;
+  width: 64px;
+  height: 100%;
+  line-height: 60px;
+  margin: 0 18px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.header-c .header-nav .nav-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666;
+  text-align: center;
+}
+
+.header-c .header-nav .nav-item a::after {
+  display: block;
+  content: "";
+  margin: -2px auto;
+  background-color: #865eff;
+  width: 0;
+  height: 2px;
+  transition: all 1s ease;
+}
+
+.header-c .header-nav .nav-item.mr0 {
+  margin-right: 0px;
+}
+
+.header-c .header-nav .nav-item:hover a {
+  color: #333;
+}
+
+.header-c .header-nav .nav-item:hover a::after {
+  /* opacity: 1; */
+  width: 45px;
+}
+/* 选中 */
+.header-c .header-nav .nav-item.active a {
+  color: #333;
+}
+.header-c .header-nav .nav-item.active a::after {
+  width: 45px;
+}
+
+/* 轮播图 */
+.banner {
+  width: 100%;
+  height: 300px;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+}
+
+/* 内容导航 */
+.nav {
+  width: fit-content;
+  margin: 54px auto 90px;
+}
+
+.nav .nav-item {
+  float: left;
+  font-size: 18px;
+  color: #666;
+  margin: 0 47px;
+}
+
+.nav .nav-item::after {
+  display: block;
+  content: "";
+  margin: 7px auto;
+  border-radius: 2px;
+  background-color: #865eff;
+  width: 0;
+  height: 4px;
+  transition: all 1s ease;
+}
+
+.nav .nav-item:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+.nav .nav-item:hover::after {
+  width: 35px;
+}
+
+/* 内容 */
+.container {
+  width: 100%;
+}
+
+.container .container-c {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* 课程优势 */
+.container-c .course .super {
+  width: fit-content;
+  margin: 0 auto;
+}
+.container-c .course .super .box {
+  float: left;
+}
+
+.container-c .course .super .center {
+  position: relative;
+  width: 234px;
+  height: 242px;
+  text-align: center;
+  line-height: 242px;
+  font-size: 100px;
+  color: #e4e4e4;
+}
+.container-c .course .super .center span {
+  display: block;
+  position: absolute;
+  vertical-align: bottom;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.course .super .us {
+  text-align: right;
+  width: 460px;
+}
+
+.course .super .other {
+  text-align: left;
+  width: 460px;
+}
+
+.course .super .item {
+  height: 50px;
+  width: fit-content;
+  line-height: 50px;
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 14px;
+  border-radius: 20px 100px 100px 20px;
+  background-image: linear-gradient(270deg, #a8a8a8 0%, #676767 100%);
+}
+.course .super .item.mr0 {
+  margin-bottom: 0;
+}
+
+.course .super .item.super1 {
+  display: inline-block;
+  padding-right: 14px;
+  border-radius: 100px 20px 20px 100px;
+  background-image: linear-gradient(270deg, #39b6f9 0%, #3c70f2 100%);
+}
+
+.course .super .item.super2 {
+  display: inline-block;
+  padding-right: 14px;
+  border-radius: 100px 20px 20px 100px;
+  background-image: linear-gradient(270deg, #a066fc 0%, #3514ce 100%);
+}
+
+.course .super .item.super3 {
+  display: inline-block;
+  padding-right: 14px;
+  border-radius: 100px 20px 20px 100px;
+  background-image: linear-gradient(270deg, #7c96b3 0%, #4b6077 100%);
+}
+
+.course .super .item.super4 {
+  display: inline-block;
+  padding-right: 14px;
+  border-radius: 100px 20px 20px 100px;
+  background-image: linear-gradient(270deg, #ffa259 0%, #fe5e80 100%);
+}

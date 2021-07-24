@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* 版心 */
 .center {
   width: 1200px;
@@ -54,20 +58,21 @@
 .header .header-nav .nav-item a::after {
   content: "";
   height: 1px;
-  width: 20px;
+  width: 0;
   display: block;
   margin: -34px auto;
   background-color: #668aca;
-  opacity: 0;
+  transition: all .5s ease;
 }
 
 .header .header-nav .nav-item:hover a {
   color: #668aca;
   font-size: 18px;
+  
 }
 
 .header .header-nav .nav-item:hover a::after {
-  opacity: 1;
+  width: 20px;
 }
 
 .header .header-nav .nav-item.active a {
@@ -76,7 +81,7 @@
 }
 
 .header .header-nav .nav-item.active a::after {
-  opacity: 1;
+  width: 20px;
 }
 
 .footer {
